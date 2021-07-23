@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		#menu{
+			color:red;
+			display:flex;
+			flex-direction: row;
+			justify-content: space-around;
+		}
+		.gridCont{
+			display:grid;
+			grid-template-columns: 100px 50px 100px;
+ 			grid-template-rows: 80px auto 80px; 
+  			column-gap: 10px;
+  			row-gap: 15px;
+		}
+		.box{
+			border:1px solid black;
+		}
+	</style>
+	<title></title>
+</head>
+
+
+
+
+<body>
+	<input id = "enterElem"></input>
+	<button id = "click" onclick = "addNewLi()">Click to add</button>
+<ul id="menu">
+  <li>The</li>
+  <li>test</li>
+</ul>
+<div class = "gridCont">
+<div class = "box">Hi</div>
+<div class = "box">Hi</div>
+<div class = "box">Hi</div>
+<div class = "box">Hi</div>
+
+</div>
+</body>
+</html>
+<script>
+  // let elem = document.querySelectorAll('li');
+  // let newElement = document.createElement('li');
+  // newElement.innerHTML = "third";
+  // // elem.push(newElement);
+  // menu.append(newElement);
+  // console.log(elem);
+function addNewLi(){
+	let elem = document.getElementById('enterElem');
+	// let value = enterElem.value;
+	let value = elem.value;
+	if(value !== ""){
+  let newElement = document.createElement('li');
+  newElement.innerHTML = `${value}`;
+  // elem.push(newElement);
+  menu.append(newElement);
+  elem.value = "";
+}
+else{
+	alert("enter some value");
+}
+}
+
+</script>

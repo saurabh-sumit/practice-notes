@@ -1,0 +1,120 @@
+** - HTML5 - addition :- 
+New, more powerful JavaScript APIs
+SVG for vector graphics
+Canvas for 2D and with WebGL 3D graphics
+CSS3 for rounded corners, gradients, etc.
+More expressive markup
+
+** - for storing in local storage
+localStorage.setItem("key",value) - value shuld be in strinng... we can use JSON.stringify and JSON.parse viceversa.
+localStorage.getItem 
+
+**-  important JS Operation
+seat.classList.add("selected");
+e.target.classList.contains("seat")
+e.target.classList.toggle("selected")
+
+**--
+ perspective: 1000px; - it changes the view to 3d;
+ for making it blur change box-shadow to rgba.
+
+ ** - charCodeAt
+  --- 
+  ecma 2021 addition :- 
+  stringreplaceAll("asdf", "sdjnss");
+
+  private method : - 
+
+  class student {
+
+   # showType(){ -- private function -- works same as of c# and java ... can be called only from inside the class . # works as aprivate key word
+   --- --
+   --- --
+   }
+
+
+  }
+
+  ---
+  promise.any([fetch('/sd/df')][fetch('/sdf/sd')]) -- it will call the any first available url or give the result for that url fetch.
+
+  -- 
+  x &&=y -- if(X){x=y}
+  x ||=y -- if xis false.. then do that
+  --
+  const{design,...rest} = student;
+
+  ---- Big int
+  const bigInt = 1234567890123456789012345678901234567890n;
+
+  ----------
+  Functions created with new Function, have [[Environment]] referencing the global Lexical Environment, not the outer one. Hence, they cannot use outer variables. But that’s actually good, because it insures us from errors. Passing parameters explicitly is a much better method architecturally and causes no problems with minifiers.
+
+  ---
+  for embeding any thing in html page :- 
+  <embed type="image/jpg" src="pic_trulli.jpg" width="300" height="200">
+  <embed type="text/html" src="snippet.html" width="500" height="200">
+<embed type="video/webm" src="video.mp4" width="400" height="300">
+----
+diff btw map and foreach
+------------
+navigator.geolocation.getCurrentPosition(success,failure)
+------
+
+SASS basic concepts
+Variables: Variables in SASS start with $ sign
+
+Nesting: CSS lacks visual hierarchy while working with child selectors. You have to write selectors and their combinations in separate lines. Nesting provides a visual hierarchy as in the HTML and increases the readability.
+
+mixins: mixins are used to include a bunch of properties or group declarations together. It allows for the easy reuse of blocks of code. Use include to
+
+Inheritance: extends are useful for sharing a generic definition with selectors rather than copying it in.
+
+If/Else Statements and loops
+
+import: separating your codes in small pieces is helpful for expressing your declarations and increasing maintainability and control over the codebase.
+
+Math operations: can be used for standard arithmetic or unit conversions.
+
+--------
+
+Obect.create -- will create a empty obect.
+whatever we pass inside obect.create() <-- will be saved as __proto__ in prototype chain.
+new keyword automate few things while creating instance of the obect
+
+function CreateUser(name,age){  // here we didn't create an obect and didn't return the object.
+    this.name = name;
+    this.age = age;
+    }
+CreateUser.prototype.increment = function (){
+    return this.age ++;
+}
+
+const user1 = new CreateUser("sumit",27);
+
+
+it is same as of class based setup
+
+class CreateUser{
+    constructor(name,age){
+    this.name =name;
+    this.age = age;
+    }
+    increment(){
+    this.age++;
+    }
+    login(){
+    console("login");
+    }
+}
+
+class Dog extends Animal
+
+--- for selecting node
+$0.style.background = 'red'
+---------
+react virtal DOM
+
+The process of syncing the real DOM with the VDOM is referred to as reconciliation.
+----
+callstack --> call back q -- > microtask q
